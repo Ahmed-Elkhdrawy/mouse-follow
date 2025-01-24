@@ -1,0 +1,40 @@
+{
+  "name": "mouse-follow",
+  "version": "1.0.0",
+  "description": "A React hook to make elements follow or move away from the mouse cursor.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build"
+  },
+  "keywords": [
+    "react",
+    "hook",
+    "mouse",
+    "animation",
+    "interaction"
+  ],
+  "author": "Ahmed Elkhdrawy <aelkhdrawy@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/mouse-follow.git"
+  },
+  "homepage": "https://github.com/your-username/mouse-follow#readme",
+  "bugs": {
+    "url": "https://github.com/your-username/mouse-follow/issues"
+  },
+  "files": [
+    "dist"
+  ],
+  "peerDependencies": {
+    "react": "^18.0.0 || ^19.0.0",
+    "react-dom": "^18.0.0 || ^19.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.8",
+    "@types/react-dom": "^19.0.3",
+    "typescript": "^5.7.3"
+  }
+}
