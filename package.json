@@ -19,11 +19,11 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/your-username/mouse-follow.git"
+    "url": "https://github.com/Ahmed-Elkhdrawy/mouse-follow.git"
   },
-  "homepage": "https://github.com/your-username/mouse-follow#readme",
+  "homepage": "https://github.com/Ahmed-Elkhdrawy/mouse-follow/blob/main/README.md",
   "bugs": {
-    "url": "https://github.com/your-username/mouse-follow/issues"
+    "url": "https://github.com/Ahmed-Elkhdrawy/mouse-follow/issues"
   },
   "files": [
     "dist"
