@@ -1,15 +1,17 @@
 
-# mouse-follow
+# 🐭 mouse-follow
 
 A React hook that enables elements to follow or move away from the mouse cursor, enhancing user interaction with dynamic cursor effects.
 
-## Features
+![npm](https://img.shields.io/npm/v/mouse-follow) ![GitHub](https://img.shields.io/github/license/Ahmed-Elkhdrawy/mouse-follow) ![GitHub stars](https://img.shields.io/github/stars/Ahmed-Elkhdrawy/mouse-follow?style=social)
 
-- **Dynamic Cursor Interaction**: Effortlessly make elements follow or repel the mouse cursor.
-- **Customizable Behavior**: Easily adjust settings to fit your application's needs.
-- **Lightweight and Efficient**: Designed with performance in mind to ensure smooth user experiences.
+## ✨ Features
 
-## Installation
+- **Dynamic Cursor Interaction**: Effortlessly make elements follow or repel the mouse cursor. 🖱️
+- **Customizable Behavior**: Easily adjust settings to fit your application's needs. 🛠️
+- **Lightweight and Efficient**: Designed with performance in mind to ensure smooth user experiences. ⚡
+
+## 📦 Installation
 
 Install the package using npm:
 
@@ -23,7 +25,7 @@ Or with yarn:
 yarn add mouse-follow
 ```
 
-## Usage
+## 🚀 Usage
 
 First, import the `useMouseFollow` hook into your React component:
 
@@ -54,14 +56,16 @@ const YourComponent = () => {
 export default YourComponent;
 ```
 
-## Configuration Options
+## ⚙️ Configuration Options
 
 The `useMouseFollow` hook accepts an optional configuration object with the following properties:
 
-- `follow` (boolean): If `true`, the element follows the cursor; if `false`, the element moves away from the cursor. Default is `true`.
-- `speed` (number): Determines the speed of the element's movement. A lower value results in slower movement. Default is `0.1`.
+| Property | Type    | Description                                                                 | Default |
+|----------|---------|-----------------------------------------------------------------------------|---------|
+| `follow`   | boolean | If `true`, the element follows the cursor; if `false`, the element moves away from the cursor. | `true`    |
+| `speed`    | number  | Determines the speed of the element's movement. A lower value results in slower movement. | `0.1`     |
 
-## Example
+## 🎯 Example
 
 Here's a simple example demonstrating how to use `mouse-follow`:
 
@@ -89,12 +93,23 @@ const FollowExample = () => {
 export default FollowExample;
 ```
 
-In this example, a blue circle will smoothly follow the mouse cursor around the screen.
+In this example, a blue circle will smoothly follow the mouse cursor around the screen. 🖱️💙
 
-## Contributing
+## 🤝 Contributing
 
 Contributions are welcome! If you have suggestions for improvements or encounter any issues, please open an issue or submit a pull request on the [GitHub repository](https://github.com/Ahmed-Elkhdrawy/mouse-follow).
 
-## License
+Steps to Contribute:
+1. Fork the repository. 🍴
+2. Create a new branch for your feature or bugfix. 🌿
+3. Commit your changes. 💾
+4. Push your branch and submit a pull request. 🚀
+
+
+## 📄 License
 
 This project is licensed under the MIT License. See the [LICENSE](https://github.com/Ahmed-Elkhdrawy/mouse-follow/blob/main/LICENSE) file for details.
+
+---
+
+**Made with ❤️ by [Ahmed Elkhdrawy](https://github.com/Ahmed-Elkhdrawy).**
