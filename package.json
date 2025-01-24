@@ -1,6 +1,6 @@
 {
   "name": "mouse-follow",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A React hook to make elements follow or move away from the mouse cursor.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
