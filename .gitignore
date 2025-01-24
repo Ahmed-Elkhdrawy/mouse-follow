@@ -42,6 +42,13 @@ build/Release
 node_modules/
 jspm_packages/
 
+# Ignore package-lock.json
+package-lock.json
+
+# Ignore build/output directories
+dist/
+build/
+
 # Snowpack dependency directory (https://snowpack.dev/)
 web_modules/
 
