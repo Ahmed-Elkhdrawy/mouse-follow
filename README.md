@@ -5,6 +5,12 @@ A React hook that enables elements to follow or move away from the mouse cursor,
 
 ![npm](https://img.shields.io/npm/v/mouse-follow) ![GitHub](https://img.shields.io/github/license/Ahmed-Elkhdrawy/mouse-follow) ![GitHub stars](https://img.shields.io/github/stars/Ahmed-Elkhdrawy/mouse-follow?style=social)
 
+
+
+![Project Screenshot](https://raw.githubusercontent.com/Ahmed-Elkhdrawy/mouse-follow/refs/heads/main/mouse-follow-screenshot.gif)
+
+
+
 ## ✨ Features
 
 - **Dynamic Cursor Interaction**: Effortlessly make elements follow or repel the mouse cursor. 🖱️
