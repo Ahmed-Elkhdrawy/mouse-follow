@@ -43,14 +43,16 @@ Then, apply the hook to your component:
 
 ```javascript
 import React from 'react';
+import { useRef } from 'react'
 import useMouseFollow from 'mouse-follow';
 
-const YourComponent = () => {
-  const ref = useMouseFollow({
-    // Configuration options
-    follow: true, // Set to false to make the element repel the cursor
-    speed: 0.1,   // Adjust the speed of the movement
-  });
+const FollowExample = () => {
+const ref = useRef<HTMLDivElement>(null)
+    useMouseFollow(ref, {
+    boundaryX?: number, // Boundary width (default: element width) ex. 200
+    boundaryY?: number, // Boundary height (default: element height) ex. 300
+    duration?: number, // Time (in ms) for the element to return to its original position (default: 1000ms) 1500
+    follow?: boolean, // Whether the element follows the mouse or moves away (default: true)
 
   return (
     <div ref={ref}>
@@ -69,7 +71,9 @@ The `useMouseFollow` hook accepts an optional configuration object with the foll
 | Property | Type    | Description                                                                 | Default |
 |----------|---------|-----------------------------------------------------------------------------|---------|
 | `follow`   | boolean | If `true`, the element follows the cursor; if `false`, the element moves away from the cursor. | `true`    |
-| `speed`    | number  | Determines the speed of the element's movement. A lower value results in slower movement. | `0.1`     |
+| `duration`    | number  | Determines the time (in milliseconds) it takes for the element to return to its original position. A lower value results in faster movement. | `1000`     |
+| `boundaryX`    | number  | Boundary width for the element's movement. If not provided, defaults to the element's width. | `undefined`     |
+| `boundaryY`    | number  | Boundary height for the element's movement. If not provided, defaults to the element's height. | `undefined`     |
 
 ## 🎯 Example
 
@@ -77,15 +81,22 @@ Here's a simple example demonstrating how to use `mouse-follow`:
 
 ```javascript
 import React from 'react';
+import { useRef } from 'react'
 import useMouseFollow from 'mouse-follow';
 
 const FollowExample = () => {
-  const ref = useMouseFollow({ follow: true, speed: 0.2 });
+const divRef = useRef<HTMLDivElement>(null)
+    useMouseFollow(divRef, {
+    boundaryX: 400,
+    boundaryY: 400,
+    duration: 2000,
+    follow: true,
+  })
 
   return (
     <div
-      ref={ref}
-      style={{
+      ref={divRef}
+       style={{
         width: '50px',
         height: '50px',
         backgroundColor: 'blue',
